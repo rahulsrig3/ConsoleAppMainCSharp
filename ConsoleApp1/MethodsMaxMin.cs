@@ -8,8 +8,7 @@ namespace ConsoleApp1
 {
     class MethodsMaxMin
     {
-
-        public static int maximum(int a, int b, int c)
+        public void maximum(int a, int b, int c)
         {
             int a1 = a;
             int a2 = b;
@@ -25,10 +24,10 @@ namespace ConsoleApp1
                     max = a2;
                 else
                     max = a3;
-            return max;
+            Console.WriteLine("Maximum value is: "+max);
         }
 
-        public static int minimum(int a, int b, int c)
+        public void minimum(int a, int b, int c)
         {
             int a1 = a;
             int a2 = b;
@@ -44,15 +43,13 @@ namespace ConsoleApp1
                     min = a2;
                 else
                     min = a3;
-            return min;
+            Console.WriteLine("Minimum value is: "+min);
         }
-        public static void Main44(String[] args)
+        public static void Main(String[] args)
         {
-            int max = maximum(10, 20, 30);
-            int min = minimum(10, 20, 30);
-
-            Console.WriteLine("maximum number is: "+max);
-            Console.WriteLine("minimum number is: "+min);
+            MethodsMaxMin mm = new MethodsMaxMin();
+            mm.maximum(10, 20, 30);
+            mm.minimum(10, 20, 30);
         }
     }
 }
