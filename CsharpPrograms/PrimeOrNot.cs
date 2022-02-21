@@ -8,7 +8,7 @@ namespace CsharpPrograms
 {
     class PrimeOrNot
     {
-        public static void Main(String[] args)
+        public static void Main98(String[] args)
         {
             Console.WriteLine("Enter the number: ");
             int num = Convert.ToInt32(Console.ReadLine());

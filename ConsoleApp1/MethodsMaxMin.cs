@@ -45,7 +45,7 @@ namespace ConsoleApp1
                     min = a3;
             Console.WriteLine("Minimum value is: "+min);
         }
-        public static void Main(String[] args)
+        public static void Main98(String[] args)
         {
             MethodsMaxMin mm = new MethodsMaxMin();
             mm.maximum(10, 20, 30);
